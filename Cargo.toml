@@ -1,0 +1,13 @@
+[package]
+name = "chip8-rs"
+version = "0.1.0"
+edition = "2018"
+authors = ["Sean Francis N. Ballais <sfballais123@gmail.com"]
+description = "A CHIP-8 emulator written in Rust."
+readme = "README.md"
+homepage = "htts://github.com/seanballais/chip8-rs"
+repository = "htts://github.com/seanballais/chip8-rs"
+license = "MPL-2.0"
+
+[dependencies]
+sdl2 = "0.34"
