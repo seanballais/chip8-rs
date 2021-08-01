@@ -6,7 +6,12 @@ use sdl2::event::Event;
 use sdl2::keyboard::Keycode;
 use sdl2::pixels::Color;
 
+mod chip8;
+
 pub fn main() -> Result<(), String> {
+    let mut vm = chip8::Chip8::new();
+    vm.load_rom("/home/seanballais/Packages/Chip8/IBM Logo.ch8");
+
     let sdl_context = sdl2::init()?;
     let video_subsystem = sdl_context.video()?;
 
